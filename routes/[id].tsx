@@ -1,29 +1,36 @@
 import { FreshContext, Handlers, PageProps } from "$fresh/server.ts";
-import { Data } from "../types.ts";
+import Quote from "../components/Quote.tsx";
 import Axios from "npm:axios";
 
 export const handler: Handlers = {
   GET: async (_req: Request, ctx: FreshContext<unknown, Data>) => {
     try {
       const { id } = ctx.params;
-      const response = await Axios.get<Data>(`https://filmquotes.deno.dev/${id}`);
-      //console.log(response)
 
-      //console.log(response.data.path)
+      const response = await Axios.get<Data>(`https://filmquotes.deno.dev/${id}`);
+
+      if(response.status !== 200) throw new Error("Ha habido un error en la petición");
+
       return ctx.render(response.data);
-    } catch (_error) {
+    } 
+    catch (error) {
+      console.error(error);
       throw new Error("Ha habido un error en el handler");
     }
   },
 };
 
 const Page = (props: PageProps<Data>) => {
-  const data = props.data;
-  return (
-    <div>
-        <h1>{data}</h1>
-        <img id="error" src="https://i.gifer.com/origin/91/91ecd2311e7def6121a9d55fcca1c29f.gif" alt="Ventanas error windows"></img>
-    </div>
-  );
+  try{
+    const quote = props.data;
+    return (
+      <Quote quote={quote} />
+    );
+  }
+  catch(error){
+    console.error(error);
+    return <div>{error.message}</div>;
+  }
 };
+
 export default Page;

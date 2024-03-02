@@ -1,3 +1,14 @@
+body {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-family: 'Comic Sans MS';
+  background: linear-gradient(45deg, red, red, purple, blue, green, yellow, red, red);
+  background-size: 400% 400%;
+  position: relative;
+  animation: gradient 2s linear infinite;
+}
+
 h1 {
   color: white;
   font-size: 40px;
@@ -11,22 +22,10 @@ h1 {
   background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
   animation: rainbow 400ms linear infinite;
 }
-body {
-  width: 100%;
-  height: 100vh;
-  color: white;
-  background: linear-gradient(45deg, red, red, purple, blue, green, yellow, red, red);
-  background-size: 400% 400%;
-  position: relative;
-  animation: gradient 2s linear infinite;
-}
 
 #error{
-  width: 500px;  /* Cambia esto al ancho que quieras */
-  height: 500px; /* Cambia esto a la altura que quieras */
   position: absolute;
-  top: 50px;     /* Cambia esto a la distancia desde la parte superior de la página que quieras */
-  left: 1300px;    /* Cambia esto a la distancia desde el lado izquierdo de la página que quieras */
+  
 }
 
 @keyframes gradient {
