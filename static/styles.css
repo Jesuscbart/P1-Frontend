@@ -5,6 +5,7 @@ body {
   background-size: 400% 400%;
   position: relative;
   animation: gradient 2s linear infinite;
+  cursor: url("/sources/cursor.png"), auto;
 }
 
 h1 {
@@ -28,6 +29,7 @@ h1 {
   transform: translate(-50%, -50%);
   transition: all 0.3s ease;
   z-index: 1;
+  font: bold 20px comic sans ms;
   font-size: 50px;
   padding: 15px 20px;
   margin: 10px;
