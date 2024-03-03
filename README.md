@@ -24,3 +24,10 @@ Los objetivos de la práctica serán los siguientes, no todos son obligatorios p
 La práctica será desarrollada en el framework Fresh, los más valientes pueden desarrollarla en HTML clásico a pelo. Este gran acto de valor será increíblemente premiado y reverenciado con un bombón (no es broma).
 La página web se tendrá que desplegar en Deno deploy o GitHub Pages en caso de HTML clásico. En la entrega tendré que ver una URL a visitar y un enlace al repositorio de GitHub donde hayáis subido el código con su respectiva release.
 Más avisos para caminantes, antes de ver nada de vuestro código abriré la página en mi navegador de confianza (el cual no es Netscape, tranquilos). La primera visualización gráfica afectará gravemente a mi opinión sobre el código que leeré Y EJECUTARÉ LOCALMENTE posteriormente.
+
+            <div class = "windows">
+                <img id = "error" src="/sources/error.gif" alt="Ventanas error windows"></img>
+                <img id = "downloading" src="/sources/downloading.webp" alt="Ventana descargando virus"></img>
+                <img id = "complete" src="/sources/complete.gif" alt="Virus descargando"></img>
+                <img id = "virus_detected" src="/sources/virus_detected.gif" alt="Virus detectado"></img>
+            </div>
