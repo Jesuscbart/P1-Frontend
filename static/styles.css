@@ -1,4 +1,4 @@
-body {
+body {  
   width: 100%;
   height: 100vh;
   background: linear-gradient(45deg, red, red, purple, blue, green, yellow, red, red);
@@ -72,13 +72,49 @@ h1 {
   height: 300px;
 }
 
+.publi {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
 
+.publi img {
+  width: 100%;
+  height: 100%;
+}
+
+.publi-button {
+  background-color: rgb(218, 213, 176);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+}
+
+.publi-button:hover {
+  background-color: rgb(170, 163, 116);
+  transition: all 0.3s ease;
+}
+
+#trampa {
+  width: 800px; 
+  height: 600px; 
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Función animación de fondo degradado*/
 @keyframes gradient {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
 
+/*Función cambio colores*/
 @keyframes color-change {
   0% { color: red; }
   20% { color: orange; }
@@ -88,6 +124,7 @@ h1 {
   100% { color: violet; }
 }
 
+/*Función animación de arcoiris para el marco de la cita*/
 @keyframes rainbow {
   0% {border-color: red;}
   14% {border-color: orange;}
@@ -98,4 +135,3 @@ h1 {
   85% {border-color: violet;}
   100% {border-color: red;}
 }
-

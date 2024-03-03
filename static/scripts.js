@@ -45,3 +45,14 @@ function imgBounce() {
 }
 
 setInterval(imgBounce, 10);
+
+
+// Script de la imagen que aparece y desaparece al hacer click (publi trampa)
+function toggleImage() {
+  var img = document.getElementById('trampa');
+  if (img.style.display === "none") {
+    img.style.display = "block";
+  } else {
+    img.style.display = "none";
+  }
+}

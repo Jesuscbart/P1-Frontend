@@ -26,7 +26,12 @@ const Quote: FunctionComponent<QuoteProps> = (props) => {
 
             <div class = "download">
                 <img id = "downloading" src="/sources/downloading.webp" alt="Ventana descargando virus"></img>
-                
+            </div>
+
+            <div class="publi">
+                <img src="/sources/publi.jpg" alt="Publicidad Falsa"></img>
+                <button class="publi-button" onclick="toggleImage()">Haz clic aquí para conocer a Laura</button>
+                <img id="trampa" src="/sources/trampa.png" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);" alt="Imagen amenaza"></img>
             </div>
 
             <script src="scripts.js"></script> 
