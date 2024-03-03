@@ -50,10 +50,18 @@ h1 {
 
 .windows #virus_detected {
   position: absolute;
-  top: 5%;
-  left: 10%;
+  top: 15%;
+  left: 80%;
   width: 350px;
   height: 350px;
+}
+
+.windows #complete{
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  width: 400px;
+  height: 300px;
 }
 
 .download #downloading{
@@ -61,14 +69,6 @@ h1 {
   top: 50%;
   left: 50%;
   width: 350px;
-  height: 300px;
-}
-
-.download #complete{
-  position: absolute;
-  top: 10%;
-  left: 6%;
-  width: 400px;
   height: 300px;
 }
 

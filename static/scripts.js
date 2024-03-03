@@ -1,4 +1,4 @@
-// Script del botón que se mueve aleatoriamente por la pantalla
+// Script del botón que se mueve aleatoriamente por la pantalla cuando se pasa el ratón por encima
 const button = document.getElementById("button");
 
 button.addEventListener('mouseover', () => {
@@ -11,8 +11,9 @@ button.addEventListener('mouseover', () => {
 
 });
 
-// Script de las dos imágenes que se mueven aleatoriamente por la pantalla
-var images = document.querySelectorAll('.windows #error, .windows #virus_detected'); 
+
+// Script de las 3 imágenes que se mueven aleatoriamente por la pantalla
+var images = document.querySelectorAll('.windows #error, .windows #virus_detected, .windows #complete'); 
 
 function moveImage(img) {
     var x = Math.random() * (window.innerWidth - img.offsetWidth);
@@ -22,8 +23,10 @@ function moveImage(img) {
     img.style.left = x + 'px';
 }
 
-setInterval(function() {images.forEach(moveImage)}, 1000);
+setInterval(function() {images.forEach(moveImage)}, 1000);  //Cada segundo se mueven las imágenes
 
+
+// Script de la imagen que rebota por la pantalla
 var img = document.querySelector('.download #downloading'); 
 var velocity = { x: 2, y: 2 };
 

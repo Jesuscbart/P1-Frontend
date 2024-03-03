@@ -5,10 +5,8 @@ export default async function Home() {
   try {
     const response = await Axios.get<Data>(`https://filmquotes.deno.dev/`);
     const quote = await response.data;
-    return (
-
-      <Quote quote={quote} />
-
+    return ( // Utilizo el componente Quote para mostrar la cita
+      <Quote quote={quote} /> 
     );
   } 
   catch (error) {
